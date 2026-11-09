@@ -81,6 +81,194 @@ function App() {
             <span>Context-aware AI</span>
           </div>
         </section>
+          <section className="monaco-section" id="features">
+    <div className="monaco-content">
+      <div className="monaco-copy">
+        <h2>Monaco editor + diffs</h2>
+
+        <p>
+          Kaizen uses the same Monaco editor family as VS Code, embedded
+          directly in the assignment workflow — syntax highlighting, multi-file
+          editing, and a familiar feel for serious programming work.
+        </p>
+
+        <div className="feature-columns">
+          <div>
+            <span className="feature-icon">{"</>"}</span>
+            <div>
+              <h4>VS Code-grade</h4>
+              <p>Monaco editing experience</p>
+            </div>
+          </div>
+
+          <div>
+            <span className="feature-icon">▣</span>
+            <div>
+              <h4>Side-by-side</h4>
+              <p>Output diff inspection</p>
+            </div>
+          </div>
+
+          <div>
+            <span className="feature-icon">▱</span>
+            <div>
+              <h4>In Canvas</h4>
+              <p>No external IDE required</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="section-pills">
+          <span className="selected-pill">Code Editor</span>
+          <span>Output Diff</span>
+        </div>
+      </div>
+
+      <div className="monaco-window">
+        <div className="window-bar">
+          <div className="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>MONACO EDITOR</p>
+        </div>
+
+        <div className="fake-code">
+          <div>
+            <span className="line-number">1</span>
+            <code>
+              <span className="code-purple">def</span>{" "}
+              <span className="code-blue">shortest_path</span>(graph, start):
+            </code>
+          </div>
+
+          <div>
+            <span className="line-number">2</span>
+            <code>&nbsp;&nbsp;visited = set()</code>
+          </div>
+
+          <div>
+            <span className="line-number">3</span>
+            <code>&nbsp;&nbsp;queue = [(start, 0)]</code>
+          </div>
+
+          <div>
+            <span className="line-number">4</span>
+            <code>&nbsp;&nbsp;while queue:</code>
+          </div>
+
+          <div>
+            <span className="line-number">5</span>
+            <code>&nbsp;&nbsp;&nbsp;&nbsp;node, dist = queue.pop(0)</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section className="student-section">
+    <div className="student-content">
+      <div className="student-copy">
+        <h2>Student Experience</h2>
+
+        <p>
+          Built for productive coding sessions with AI guidance, pre-submit
+          testcase checks, and fast feedback loops. Kaizen keeps students in
+          flow from first edit to final submit, with fewer context switches and
+          clearer next steps when something breaks.
+        </p>
+
+        <p>
+          Whether they are debugging logic, chasing edge cases, or iterating
+          after a report, students work inside a single Canvas-native experience
+          designed for real programming assignments — not isolated snippets or
+          disconnected tools.
+        </p>
+
+        <div className="student-stats">
+          <div>
+            <span className="stat-icon">{"</>"}</span>
+            <div>
+              <h4>Multi-file</h4>
+              <p>Workspace for real assignments</p>
+            </div>
+          </div>
+
+          <div>
+            <span className="stat-icon">☷</span>
+            <div>
+              <h4>Pre-submit</h4>
+              <p>Testcase checks built in</p>
+            </div>
+          </div>
+
+          <div>
+            <span className="stat-icon">◷</span>
+            <div>
+              <h4>~5 sec</h4>
+              <p>Typical submit-to-feedback loop</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="student-links">
+          <span className="active-student-link">k.ai.zen Chatbot</span>
+          <span>Pre-Submit Testcase Checks</span>
+          <span>Fast Submission + Report Loop</span>
+          <span>Focused Multi-file Workspace</span>
+        </div>
+      </div>
+
+      <div className="chatbot-card">
+        <h3>▣ &nbsp; k.ai.zen Chatbot</h3>
+
+        <div className="chat-window">
+          <div className="window-bar">
+            <div className="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p>UPLOAD CHAT EXPERIENCE</p>
+          </div>
+
+          <div className="chat-body">
+            <div className="chat-header">
+              <span>k.ai.zen Chat</span>
+              <span className="most-used">Most Used</span>
+            </div>
+
+            <div className="user-message">
+              I keep failing an edge testcase. What should I inspect first?
+            </div>
+
+            <div className="ai-message">
+              Start with empty-input guards and index bounds before loop
+              execution.
+            </div>
+
+            <div className="quick-prompts">
+              Quick prompts + context-aware responses
+            </div>
+          </div>
+        </div>
+
+        <p className="chat-description">
+          Students use the chatbot to debug faster while staying in assignment
+          context. k.ai.zen understands the active question and recent code
+          changes, so responses stay grounded in what the student is actually
+          working on.
+        </p>
+
+        <ul>
+          <li>Question-aware chat context</li>
+          <li>Quick prompts for common coding tasks</li>
+          <li>Persistent per-question conversation flow</li>
+        </ul>
+      </div>
+    </div>
+  </section>
       </main>
 
         <section className="how-it-works" id="how-it-works">

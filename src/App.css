@@ -441,6 +441,299 @@
   font-weight: 400;
 }
 
+.monaco-section,
+.student-section {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 90px 0;
+}
+
+.monaco-content,
+.student-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: center;
+}
+
+.monaco-copy,
+.student-copy {
+  text-align: left;
+}
+
+.monaco-copy h2,
+.student-copy h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: 38px;
+  letter-spacing: -1px;
+}
+
+.monaco-copy > p,
+.student-copy > p {
+  margin: 0 0 22px;
+  color: #697894;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.feature-columns,
+.student-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 32px;
+}
+
+.feature-columns > div,
+.student-stats > div {
+  display: flex;
+  gap: 12px;
+  padding: 0 18px;
+  border-right: 1px solid #dfe3eb;
+}
+
+.feature-columns > div:first-child,
+.student-stats > div:first-child {
+  padding-left: 0;
+}
+
+.feature-columns > div:last-child,
+.student-stats > div:last-child {
+  border-right: none;
+}
+
+.feature-columns h4,
+.student-stats h4 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.feature-columns p,
+.student-stats p {
+  margin: 0;
+  color: #697894;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.feature-icon,
+.stat-icon {
+  color: #952df4;
+  font-weight: 600;
+}
+
+.section-pills {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.section-pills span {
+  padding: 8px 16px;
+  border: 1px solid #d8dee8;
+  border-radius: 999px;
+  color: #697894;
+  font-size: 14px;
+}
+
+.section-pills .selected-pill {
+  border-color: #c184ff;
+  background: #fbf6ff;
+  color: #9840ed;
+}
+
+.monaco-window {
+  overflow: hidden;
+  border: 1px solid #d7b4ff;
+  border-radius: 10px;
+  background: white;
+}
+
+.fake-code {
+  margin: 18px;
+  padding: 20px;
+
+  border: 1px solid #dfe4ec;
+  border-radius: 6px;
+
+  color: #3f4858;
+  background: #ffffff;
+
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.fake-code > div {
+  display: flex;
+}
+
+.line-number {
+  width: 28px;
+  color: #9ba5b5;
+  user-select: none;
+}
+
+.code-purple {
+  color: #9c36ef;
+}
+
+.code-blue {
+  color: #596edb;
+}
+
+/* STUDENT EXPERIENCE */
+
+.student-section {
+  padding-top: 100px;
+}
+
+.student-content {
+  align-items: start;
+}
+
+.student-stats {
+  margin-top: 30px;
+}
+
+.student-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.student-links span {
+  padding: 8px 12px;
+  color: #697894;
+  font-size: 14px;
+}
+
+.student-links .active-student-link {
+  border: 1px solid #c184ff;
+  border-radius: 6px;
+  background: #fbf6ff;
+  color: #9840ed;
+}
+
+.chatbot-card {
+  padding: 26px;
+
+  border: 1px solid #d7b4ff;
+  border-radius: 12px;
+  background: white;
+
+  text-align: left;
+}
+
+.chatbot-card > h3 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.chat-window {
+  overflow: hidden;
+  border: 1px solid #d7b4ff;
+  border-radius: 9px;
+}
+
+.chat-body {
+  padding: 14px;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 9px 12px;
+  margin-bottom: 10px;
+
+  border: 1px solid #ead9fb;
+  border-radius: 6px;
+
+  color: #9840ed;
+  background: #fcf8ff;
+  font-size: 13px;
+}
+
+.most-used {
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #ead0ff;
+  font-size: 11px;
+}
+
+.user-message,
+.ai-message,
+.quick-prompts {
+  margin-top: 8px;
+  padding: 9px 11px;
+
+  border: 1px solid #dfe4ec;
+  border-radius: 6px;
+
+  color: #344054;
+  font-size: 12px;
+}
+
+.user-message {
+  border-color: #d7b4ff;
+  background: #fcf8ff;
+}
+
+.ai-message {
+  background: #fafbfc;
+}
+
+.quick-prompts {
+  border: none;
+  background: #f1f4f8;
+  color: #74829a;
+}
+
+.chat-description {
+  margin: 18px 0 14px;
+  color: #697894;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.chatbot-card ul {
+  margin: 0;
+  padding-left: 18px;
+
+  color: #697894;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.chatbot-card li::marker {
+  color: #bd70f7;
+}
+
+@media (max-width: 850px) {
+  .monaco-content,
+  .student-content {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-columns,
+  .student-stats {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-columns > div,
+  .student-stats > div {
+    padding: 0;
+    border-right: none;
+  }
+}
+
 @media (max-width: 700px) {
   .navbar {
     width: calc(100% - 30px);
