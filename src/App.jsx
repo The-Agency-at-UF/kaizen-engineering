@@ -272,59 +272,221 @@ function App() {
       </main>
 
         <section className="how-it-works" id="how-it-works">
-    <div className="section-heading">
-      <h2>How Kaizen Works</h2>
-      <p>
-        Kaizen is built around a simple loop: code inside Canvas, pre-check
-        testcases before submit, then learn from report feedback and iterate.
-      </p>
-    </div>
-
-    <div className="code-workspace-card">
-      <div className="window-bar">
-        <div className="window-dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <p>STEP 1: CODE</p>
+      <div className="section-heading">
+        <h2>How Kaizen Works</h2>
+        <p>
+          Kaizen is built around a simple loop: code inside Canvas, pre-check
+          testcases before submit, then learn from report feedback and iterate.
+        </p>
       </div>
 
-      <div className="coding-layout">
-        <div className="file-sidebar">
-          <div className="question-label">Question 2 / 4</div>
-
-          <p>Files</p>
-          <span className="selected-file">main.py</span>
-          <span>graph.py</span>
-          <span>helpers.py</span>
+      <div className="code-workspace-card">
+        <div className="window-bar">
+          <div className="window-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <p>STEP 1: CODE</p>
         </div>
 
-        <div className="editor-preview">
-          <div className="editor-line long"></div>
-          <div className="editor-line medium"></div>
-          <div className="editor-line purple"></div>
-          <div className="editor-line long"></div>
+        <div className="coding-layout">
+          <div className="file-sidebar">
+            <div className="question-label">Question 2 / 4</div>
+
+            <p>Files</p>
+            <span className="selected-file">main.py</span>
+            <span>graph.py</span>
+            <span>helpers.py</span>
+          </div>
+
+          <div className="editor-preview">
+            <div className="editor-line long"></div>
+            <div className="editor-line medium"></div>
+            <div className="editor-line purple"></div>
+            <div className="editor-line long"></div>
+          </div>
         </div>
+      </div>
+
+      <div className="code-description">
+        <h3>Code in Kaizen</h3>
+
+        <p>
+          Students open questions, edit files, and iterate in a clean coding
+          workspace with instructions and file structure always in view.
+        </p>
+
+        <div className="workflow">
+          <span className="active-workflow">Code</span>
+          <b>→</b>
+          <span>Test + Submit</span>
+          <b>→</b>
+          <span>Review</span>
+        </div>
+      </div>
+</section>
+{/* REPORT EXPERIENCE */}
+<section className="split-section report-section">
+  <div className="feature-card">
+    <h3>▱ &nbsp; Question Feedback Summary</h3>
+
+    <div className="mini-window">
+      <div className="window-header">
+        <span>● ● ●</span>
+        <span>FEEDBACK SUMMARY</span>
+      </div>
+
+      <div className="feedback-box purple-box">
+        <strong>Question Feedback</strong>
+        <p>Strong decomposition. Improve loop complexity.</p>
+      </div>
+
+      <div className="feedback-box">
+        <strong>Recommendation</strong>
+        <p>Use a hash map to avoid nested scans.</p>
       </div>
     </div>
 
-    <div className="code-description">
-      <h3>Code in Kaizen</h3>
+    <p>
+      Feedback highlights what passed, what failed, and where to improve.
+      Each question gets a readable summary focused on next actions, so
+      students know exactly what to fix before their next attempt.
+    </p>
 
-      <p>
-        Students open questions, edit files, and iterate in a clean coding
-        workspace with instructions and file structure always in view.
-      </p>
+    <ul className="purple-list">
+      <li>Readable summary per question</li>
+      <li>Focused on next actions</li>
+      <li>Supports revision planning</li>
+    </ul>
+  </div>
 
-      <div className="workflow">
-        <span className="active-workflow">Code</span>
-        <b>→</b>
-        <span>Test + Submit</span>
-        <b>→</b>
-        <span>Review</span>
+  <div className="section-copy">
+    <h2>Report Experience</h2>
+
+    <p>
+      Rich reports connect test outcomes to code, guidance, and next actions.
+      Instead of a single score, students see what passed, what failed, and
+      why, making it easier to turn feedback into a concrete revision plan.
+    </p>
+
+    <p>
+      Reports stay tied to the question students were working on, so every
+      summary, testcase result, and AI follow-up points back to the code they
+      actually submitted.
+    </p>
+
+    <div className="three-features">
+      <div>
+        <strong>▱ Per-question</strong>
+        <span>Feedback summaries</span>
+      </div>
+
+      <div>
+        <strong>▣ Granular</strong>
+        <span>Testcase pass/fail detail</span>
+      </div>
+
+      <div>
+        <strong>□ Follow-up</strong>
+        <span>AI coaching from reports</span>
       </div>
     </div>
+
+    <div className="vertical-links">
+      <button className="active-tab">Question Feedback Summary</button>
+      <button>Detailed Testcase Results</button>
+      <button>Code + Submission History</button>
+      <button>Context-aware AI</button>
+    </div>
+  </div>
+</section>
+
+
+{/* INSTRUCTOR EXPERIENCE */}
+<section className="split-section instructor-section">
+  <div className="section-copy">
+    <h2>Instructor Experience</h2>
+
+    <p>
+      Instructor tools cover assignment setup, preview validation, performance
+      trends, and student search. From authoring to intervention, Kaizen gives
+      teaching teams the visibility they need to support students before
+      deadlines pass.
+    </p>
+
+    <p>
+      Course staff can validate the student journey, monitor assignment health,
+      and jump directly into individual submissions, all without leaving the
+      workflow they already use in Canvas.
+    </p>
+
+    <div className="three-features">
+      <div>
+        <strong>♙ Preview</strong>
+        <span>Validate before publish</span>
+      </div>
+
+      <div>
+        <strong>☷ Stats</strong>
+        <span>Assignment health at a glance</span>
+      </div>
+
+      <div>
+        <strong>⌕ Search</strong>
+        <span>Jump to any student report</span>
+      </div>
+    </div>
+
+    <div className="vertical-links">
+      <button className="active-tab">Assignment Authoring</button>
+      <button>Preview as Student</button>
+      <button>Stats Dashboard</button>
+      <button>Student Search</button>
+    </div>
+  </div>
+
+  <div className="feature-card">
+    <h3>◇ &nbsp; Assignment Authoring</h3>
+
+    <div className="mini-window">
+      <div className="window-header">
+        <span>● ● ●</span>
+        <span>ASSIGNMENT EDITOR</span>
+      </div>
+
+      <div className="setting-row">
+        <span>Autograder Enabled</span>
+        <strong>ON</strong>
+      </div>
+
+      <div className="assignment-grid">
+        <div>
+          <span>Language</span>
+          <strong>Python</strong>
+        </div>
+
+        <div>
+          <span>Questions</span>
+          <strong>4 configured</strong>
+        </div>
+      </div>
+
+      <button className="save-button">Save Assignment</button>
+    </div>
+
+    <p>
+      Configure question structure, language options, and grading setup in one
+      editor. Autograder controls and question management are built for fast
+      iteration as assignments evolve.
+    </p>
+
+    <ul className="purple-list">
+      <li>One editor for assignment setup</li>
+      <li>Autograder controls and question management</li>
+      <li>Built for fast iteration</li>
+    </ul>
+  </div>
 </section>
     </div>
   );
