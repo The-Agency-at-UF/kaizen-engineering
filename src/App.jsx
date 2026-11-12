@@ -8,6 +8,7 @@ import StudentExperience from "./components/StudentExperience";
 import ReportExperience from "./components/ReportExperience";
 import InstructorExperience from "./components/InstructorExperience";
 import Comparison from "./components/Comparison";
+import ScrollReveal from "./components/ScrollReveal";
 
 function App() {
   return (
@@ -16,12 +17,30 @@ function App() {
 
       <main>
         <Hero />
-        <HowItWorks />
-        <MonacoEditor />
-        <StudentExperience />
-        <ReportExperience />
-        <InstructorExperience />
-        <Comparison />
+
+        <ScrollReveal>
+          <HowItWorks />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <MonacoEditor />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <StudentExperience />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <ReportExperience />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <InstructorExperience />
+        </ScrollReveal>
+
+        <ScrollReveal>
+          <Comparison />
+        </ScrollReveal>
       </main>
     </div>
   );
