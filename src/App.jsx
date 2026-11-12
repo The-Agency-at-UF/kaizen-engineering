@@ -9,6 +9,8 @@ import ReportExperience from "./components/ReportExperience";
 import InstructorExperience from "./components/InstructorExperience";
 import Comparison from "./components/Comparison";
 import ScrollReveal from "./components/ScrollReveal";
+import Community from "./components/Community";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -41,6 +43,12 @@ function App() {
         <ScrollReveal>
           <Comparison />
         </ScrollReveal>
+
+        <ScrollReveal>
+          <Community />
+        </ScrollReveal>
+
+        <Footer />
       </main>
     </div>
   );
