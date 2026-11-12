@@ -1534,3 +1534,390 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================================
+   FIGMA HERO DECORATIONS - FINAL
+   ========================================= */
+
+.workspace-stage {
+  position: relative;
+
+  width: min(1034px, 100%);
+  margin: 0 auto 38px;
+}
+
+.workspace-stage .workspace-card {
+  width: 100%;
+  margin: 0;
+}
+
+.hero-code-decorations {
+  position: absolute;
+  inset: 0;
+
+  z-index: 5;
+  pointer-events: none;
+}
+
+.figma-code-decoration {
+  position: absolute;
+
+  width: 60px;
+  height: 60px;
+
+  object-fit: contain;
+  display: block;
+}
+
+
+/* LEFT CLUSTER */
+
+.figma-code-decoration.left-one {
+  left: 26px;
+  top: -104px;
+}
+
+.figma-code-decoration.left-two {
+  left: -4px;
+  top: -44px;
+}
+
+.figma-code-decoration.left-three {
+  left: 58px;
+  top: -44px;
+}
+
+.figma-code-decoration.left-four {
+  left: 154px;
+  top: -44px;
+}
+
+
+/* RIGHT CLUSTER */
+
+.figma-code-decoration.right-one {
+  right: 26px;
+  top: -104px;
+}
+
+.figma-code-decoration.right-two {
+  right: 58px;
+  top: -44px;
+}
+
+.figma-code-decoration.right-three {
+  right: -4px;
+  top: -44px;
+}
+
+
+@media (max-width: 850px) {
+  .hero-code-decorations {
+    display: none;
+  }
+}
+
+
+/* =========================================
+   FIGMA HERO FINAL PASS
+   ========================================= */
+
+/* Figma uses a subtle grid inside the hero too */
+.navbar,
+.hero {
+  background-color: #fafbff;
+  background-image:
+    linear-gradient(rgba(47, 0, 135, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 0, 135, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Navbar */
+.navbar {
+  height: 95px;
+  padding: 0 58px;
+}
+
+.logo {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Compact the hero to Figma proportions */
+.hero {
+  min-height: 850px;
+  padding: 52px 60px 58px;
+}
+
+/* Figma's headline is much smaller than our current version */
+.hero h1 {
+  width: min(636px, 100%);
+  max-width: 636px;
+
+  margin: 0 auto 70px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0;
+
+  text-align: center;
+}
+
+/* Body copy */
+.hero-description {
+  width: min(818px, 100%);
+  max-width: 818px;
+
+  margin: 0 auto 28px;
+
+  font-size: 18px;
+  line-height: 1.4;
+  color: #171a1e;
+}
+
+/* Exact Figma button dimensions */
+.hero-buttons {
+  margin: 0 auto 60px;
+  gap: 22px;
+}
+
+.hero-buttons .primary-button,
+.hero-buttons .secondary-button {
+  box-sizing: border-box;
+
+  width: 209px;
+  height: 49px;
+
+  padding: 0 16px;
+}
+
+/* Figma workspace proportions */
+.workspace-stage .workspace-card {
+  width: 100%;
+  height: 186px;
+  margin: 0;
+}
+
+/* Text below workspace */
+.hero-bottom-copy {
+  width: min(818px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Feature pills */
+.hero-pills {
+  margin-top: 26px;
+  gap: 26px;
+}
+
+.hero-pills span {
+  min-width: 176px;
+  min-height: 43px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile keeps the existing responsive layout */
+@media (max-width: 850px) {
+  .navbar,
+  .hero {
+    background-size: 32px 32px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero h1 {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+.workspace-stage .workspace-card {
+  height: auto;
+}
+}
+/* FINAL HERO DECORATION POSITION */
+.hero-code-decorations {
+  transform: translateY(-14px);
+}
+
+/* =========================================
+   HOW KAIZEN WORKS - FIGMA PASS
+   ========================================= */
+
+.how-it-works {
+  box-sizing: border-box;
+  width: min(1180px, calc(100% - 48px));
+  margin: 80px auto;
+  padding: 70px 72px 76px;
+
+  background: #fafbff;
+  border: 2px solid #d2dbe7;
+  border-radius: 50px;
+  box-shadow: 5px 5px 0 #d6dce6;
+
+  color: #171a1e;
+}
+
+.how-it-works .section-heading {
+  max-width: 820px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.how-it-works .section-heading h2 {
+  margin: 0 0 20px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #171a1e;
+}
+
+.how-it-works .section-heading p {
+  margin: 0;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #66758f;
+}
+
+.how-content {
+  width: 100%;
+}
+
+/* Coding preview */
+
+.how-it-works .code-workspace-card {
+  width: 100%;
+  margin: 0 0 42px;
+
+  overflow: hidden;
+  background: #fafbff;
+
+  border: 1.5px solid #d2dbe7;
+  border-radius: 21px;
+  box-shadow: 5px 5px 0 #d6dce6;
+}
+
+/* Description beneath preview */
+
+.how-it-works .code-description {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.how-it-works .code-description h3 {
+  margin: 0 0 16px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 32px;
+  font-weight: 700;
+  color: #171a1e;
+}
+
+.how-it-works .code-description > p {
+  margin: 0 auto 30px;
+
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #66758f;
+}
+
+/* Code → Test + Submit → Review */
+
+.how-it-works .workflow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.how-it-works .workflow span {
+  box-sizing: border-box;
+
+  min-width: 170px;
+  height: 44px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #fafbff;
+  border: 2px solid #171a1e;
+  border-radius: 30px;
+  box-shadow: 5px 5px 0 #171a1e;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: #171a1e;
+}
+
+.how-it-works .workflow span.active-workflow {
+  background: #823ae2;
+  border-color: #823ae2;
+  color: #ffffff;
+}
+
+.how-it-works .workflow b {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: #823ae2;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .how-it-works {
+    width: calc(100% - 24px);
+    margin: 48px auto;
+    padding: 48px 24px;
+    border-radius: 32px;
+  }
+
+  .how-it-works .section-heading h2 {
+    font-size: 36px;
+  }
+
+  .how-it-works .section-heading p {
+    font-size: 17px;
+  }
+
+  .how-it-works .code-description h3 {
+    font-size: 27px;
+  }
+
+  .how-it-works .workflow {
+    gap: 14px;
+  }
+
+  .how-it-works .workflow b {
+    display: none;
+  }
+}
