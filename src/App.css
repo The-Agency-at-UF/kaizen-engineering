@@ -2376,3 +2376,17 @@ html {
     border-radius: 28px;
   }
 }
+
+/* =========================================
+   REPORT - FINAL TILE SIZE
+   ========================================= */
+
+.report-section.split-section {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+
+  margin: 110px auto 0;
+  padding: 76px 72px;
+
+  box-sizing: border-box;
+}
