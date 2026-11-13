@@ -1,7 +1,12 @@
+import kaizenBird from "../assets/kaizen/kaizen-bird.png";
+
 function Navbar() {
   return (
     <header className="navbar">
-      <div className="logo">Kaizen</div>
+      <div className="logo">
+        <img src={kaizenBird} alt="Kaizen Bird" />
+        Kaizen
+      </div>
 
       <nav>
         <a href="#how-it-works">How it works</a>

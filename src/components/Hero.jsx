@@ -1,3 +1,10 @@
+import code42 from "../assets/kaizen/code-42.png";
+import code39 from "../assets/kaizen/code-39.png";
+import code38 from "../assets/kaizen/code-38.png";
+import code37 from "../assets/kaizen/code-37.png";
+import code40 from "../assets/kaizen/code-40.png";
+import code41 from "../assets/kaizen/code-41.png";
+
 function Hero() {
   return (
     <section className="hero">
@@ -15,39 +22,59 @@ function Hero() {
       </p>
 
       <div className="hero-buttons">
-        <button className="primary-button">Get Started →</button>
-        <button className="secondary-button">See how it works</button>
+        <a href="#features" className="primary-button">
+          Get Started →
+        </a>
+
+        <a href="#how-it-works" className="secondary-button">
+          See how it works
+        </a>
       </div>
+
+      <div className="workspace-stage">
+        <div className="hero-code-decorations" aria-hidden="true">
+      <img className="figma-code-decoration left-one" src={code42} alt="" />
+      <img className="figma-code-decoration left-two" src={code39} alt="" />
+      <img className="figma-code-decoration left-three" src={code38} alt="" />
+      <img className="figma-code-decoration left-four" src={code37} alt="" />
+
+      <img className="figma-code-decoration right-one" src={code40} alt="" />
+      <img className="figma-code-decoration right-two" src={code41} alt="" />
+      <img className="figma-code-decoration right-three" src={code42} alt="" />
+    </div>
 
       <div className="workspace-card">
-        <div className="window-bar">
-          <div className="window-dots">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div className="window-bar">
+            <div className="window-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p>WORKSPACE LAYOUT</p>
           </div>
-          <p>WORKSPACE LAYOUT</p>
+
+          <div className="workspace-content">
+            <div className="workspace-tabs">
+              <span className="active-tab">Question 3/5</span>
+              <span>graph.py</span>
+              <span>helpers.py</span>
+            </div>
+
+            <div className="code-preview">
+              <div className="code-line long"></div>
+              <div className="code-line medium"></div>
+              <div className="code-line purple"></div>
+              <div className="code-line short"></div>
+            </div>
+
+            <div className="workspace-caption">
+              Instructions + editor + tests in one flow
+            </div>
+          </div>
         </div>
 
-        <div className="workspace-content">
-          <div className="workspace-tabs">
-            <span className="active-tab">Question 3/5</span>
-            <span>graph.py</span>
-            <span>helpers.py</span>
-          </div>
-
-          <div className="code-preview">
-            <div className="code-line long"></div>
-            <div className="code-line medium"></div>
-            <div className="code-line purple"></div>
-            <div className="code-line short"></div>
-          </div>
-
-          <div className="workspace-caption">
-            Instructions + editor + tests in one flow
-          </div>
-        </div>
       </div>
+      
 
       <p className="hero-bottom-text">
         Students switch questions and files without losing coding momentum.

@@ -4,9 +4,9 @@ function Comparison() {
       <div className="comparison-heading">
         <h2>Why not just use X?</h2>
         <p>
-          Kaizen is not another IDE tab or chat window. It connects coding,
-          grading, and feedback inside Canvas, so students iterate faster and
-          instructors see where support is needed.
+          Kaizen is designed around the full assignment loop, not just one part
+          of it. It connects coding, grading, and feedback inside Canvas, so
+          students iterate faster and instructors see where support is needed.
         </p>
       </div>
 
@@ -16,14 +16,14 @@ function Comparison() {
 
           <span className="comparison-label">THE PROBLEM</span>
           <p>
-            Students code elsewhere, upload files, and wait for opaque autograder
-            results with little context.
+            Students code elsewhere, upload files, and wait for opaque
+            autograder results with little context.
           </p>
 
           <span className="comparison-label purple-label">WITH KAIZEN</span>
           <p>
-            Code, pre-check, submit, and review feedback inside one Canvas-native
-            loop.
+            Code, pre-check, submit, and review feedback inside one
+            Canvas-native loop.
           </p>
 
           <span className="comparison-label">OUTCOME</span>
@@ -37,8 +37,8 @@ function Comparison() {
 
           <span className="comparison-label">THE PROBLEM</span>
           <p>
-            Chatbots don't know the assignment, testcases, or latest submission,
-            so advice is often too generic to act on.
+            Chatbots don't know the assignment, testcases, or latest
+            submission, so advice is often too generic to act on.
           </p>
 
           <span className="comparison-label purple-label">WITH KAIZEN</span>
