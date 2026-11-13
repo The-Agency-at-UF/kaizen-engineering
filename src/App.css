@@ -2145,3 +2145,467 @@ html {
     overflow-x: auto;
   }
 }
+
+/* =========================================
+   STUDENT EXPERIENCE - FIGMA PASS
+   ========================================= */
+
+.student-section {
+  width: min(1034px, calc(100% - 48px));
+  margin: 72px auto 0;
+  padding: 76px 72px;
+
+  background-color: #fafbff;
+  background-image:
+    linear-gradient(rgba(47, 0, 135, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 0, 135, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  border-radius: 42px;
+  box-shadow: 7px 8px 0 rgba(210, 216, 228, 0.9);
+
+  box-sizing: border-box;
+}
+
+.student-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.92fr);
+  gap: 58px;
+  align-items: start;
+}
+
+.student-copy h2 {
+  margin: 0 0 24px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  color: #171a1e;
+}
+
+.student-copy > p {
+  margin: 0 0 20px;
+
+  font-size: 15px;
+  line-height: 1.65;
+  color: #60708f;
+}
+
+/* Three feature stats */
+
+.student-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.student-stats > div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  padding-right: 14px;
+}
+
+.student-stats > div:not(:last-child) {
+  border-right: 1px solid #d9ddea;
+  margin-right: 14px;
+}
+
+.stat-icon {
+  color: #9228f8;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+}
+
+.student-stats h4 {
+  margin: 0 0 5px;
+
+  font-size: 13px;
+  color: #171a1e;
+}
+
+.student-stats p {
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.4;
+  color: #73809b;
+}
+
+/* Left-side feature links */
+
+.student-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.student-links span {
+  font-size: 12px;
+  color: #71809c;
+}
+
+.student-links .active-student-link {
+  padding: 8px 13px;
+
+  color: #9228f8;
+
+  border: 1px solid #9228f8;
+  border-radius: 4px;
+}
+
+/* Chatbot card */
+
+.chatbot-card {
+  padding: 22px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  border: 1px solid #a13aff;
+  border-radius: 10px;
+
+  box-sizing: border-box;
+}
+
+.chatbot-card h3 {
+  margin: 0 0 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #171a1e;
+}
+
+.chat-window {
+  overflow: hidden;
+
+  border: 1px solid #a13aff;
+  border-radius: 7px;
+
+  background: #ffffff;
+}
+
+.chat-window .window-bar {
+  min-height: 34px;
+  padding: 0 12px;
+}
+
+.chat-body {
+  padding: 14px;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 13px;
+
+  font-size: 11px;
+  color: #9228f8;
+}
+
+.most-used {
+  padding: 3px 7px;
+
+  font-size: 9px;
+
+  background: #f0ddff;
+  border-radius: 3px;
+}
+
+.user-message,
+.ai-message,
+.quick-prompts {
+  margin-bottom: 9px;
+  padding: 9px 11px;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.user-message {
+  border: 1px solid #a13aff;
+  background: #ffffff;
+  color: #3b4252;
+}
+
+.ai-message {
+  background: #f4edff;
+  color: #3b4252;
+}
+
+.quick-prompts {
+  background: #f3f5f9;
+  color: #78849b;
+}
+
+.chat-description {
+  margin: 20px 0 14px;
+
+  font-size: 12px;
+  line-height: 1.55;
+  color: #60708f;
+}
+
+.chatbot-card ul {
+  margin: 0;
+  padding-left: 17px;
+
+  color: #9228f8;
+}
+
+.chatbot-card li {
+  margin-bottom: 6px;
+  padding-left: 3px;
+
+  font-size: 11px;
+}
+
+.chatbot-card li::marker {
+  color: #9228f8;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+  .student-section {
+    width: min(100% - 24px, 1034px);
+    margin-top: 60px;
+    padding: 48px 26px;
+
+    border-radius: 28px;
+    background-size: 32px 32px;
+  }
+
+  .student-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .student-stats {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .student-stats > div:not(:last-child) {
+    border-right: 0;
+    margin-right: 0;
+  }
+}
+
+/* =========================================
+   STUDENT EXPERIENCE - FINAL SIZE FIX
+   ========================================= */
+
+.student-section {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+
+  margin: 72px auto 0;
+  padding: 78px 70px;
+
+  box-sizing: border-box;
+}
+
+.student-content {
+  width: 100%;
+  max-width: 1034px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.student-copy h2 {
+  font-size: 34px;
+}
+
+.student-copy > p {
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.chatbot-card {
+  width: 100%;
+  padding: 22px;
+}
+
+.student-stats {
+  margin-top: 34px;
+  margin-bottom: 34px;
+}
+
+.student-links {
+  gap: 18px;
+}
+
+/* =========================================
+   MONACO - FIGMA SIZE CORRECTION
+   ========================================= */
+
+.monaco-section {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+
+  margin: 110px auto 0;
+  padding: 76px 72px;
+
+  background-color: #fafbff;
+  background-image:
+    linear-gradient(rgba(47, 0, 135, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 0, 135, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  border-radius: 42px;
+  box-shadow: 7px 8px 0 rgba(210, 216, 228, 0.9);
+  box-sizing: border-box;
+}
+
+.monaco-content {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+.monaco-copy h2 {
+  margin: 0 0 24px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.monaco-copy > p {
+  margin: 0 0 30px;
+
+  font-size: 16px;
+  line-height: 1.55;
+  color: #60708f;
+}
+
+.monaco-section .feature-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0 0 30px;
+}
+
+.monaco-section .feature-columns > div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0;
+  border: 0;
+}
+
+.monaco-section .feature-icon {
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1.5px solid #9228f8;
+  border-radius: 8px;
+  background: white;
+  color: #171a1e;
+  font-size: 13px;
+}
+
+.monaco-section .feature-columns h4 {
+  margin: 0 0 3px;
+  font-size: 14px;
+}
+
+.monaco-section .feature-columns p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.monaco-section .section-pills {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.monaco-section .section-pills span {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+/* editor */
+
+.monaco-window {
+  width: 100%;
+  min-height: 285px;
+
+  border: 1px solid #d9dfea;
+  border-radius: 15px;
+
+  background: white;
+  overflow: hidden;
+
+  box-shadow: 7px 8px 0 #d9dfea;
+}
+
+.monaco-window .window-bar {
+  height: 42px;
+  min-height: 42px;
+  padding: 0 15px;
+}
+
+.monaco-window .window-bar p {
+  font-size: 9px;
+}
+
+.monaco-window .fake-code {
+  margin: 16px;
+  padding: 30px 24px;
+
+  border: 1px solid #dfe4ec;
+  border-radius: 5px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.monaco-window .line-number {
+  width: 26px;
+  flex: 0 0 26px;
+  margin-right: 12px;
+}
+
+@media (max-width: 850px) {
+  .monaco-section {
+    width: calc(100% - 24px);
+    margin-top: 72px;
+    padding: 48px 26px;
+    border-radius: 28px;
+  }
+
+  .monaco-content {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+}
