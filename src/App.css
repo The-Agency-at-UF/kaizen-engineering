@@ -2609,3 +2609,440 @@ html {
     gap: 38px;
   }
 }
+
+/* =========================================
+   REPORT EXPERIENCE - FIGMA MATCH
+   ========================================= */
+
+.report-section {
+  width: min(1180px, calc(100% - 48px));
+  max-width: 1180px;
+
+  margin: 72px auto 0;
+  padding: 72px;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 68px;
+  align-items: center;
+
+  background-color: #fafbff;
+  background-image:
+    linear-gradient(rgba(47, 0, 135, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 0, 135, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  border-radius: 42px;
+  box-shadow: 7px 8px 0 rgba(210, 216, 228, 0.9);
+  box-sizing: border-box;
+}
+
+
+/* LEFT FEEDBACK CARD */
+
+.report-section .feature-card {
+  width: 100%;
+  margin: 0;
+  padding: 26px;
+
+  background: #fff;
+  border: 1.5px solid #9228f8;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+}
+
+.report-section .feature-card h3 {
+  margin: 0 0 20px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.report-section .mini-window {
+  margin-bottom: 22px;
+
+  border: 1px solid #d9dfea;
+  border-radius: 8px;
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.report-section .window-header {
+  height: 34px;
+  padding: 0 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #e2e6ee;
+
+  font-size: 9px;
+  color: #60708f;
+}
+
+.report-section .feedback-box {
+  margin: 10px 12px;
+  padding: 12px;
+
+  border: 1px solid #d9dfea;
+  border-radius: 6px;
+}
+
+.report-section .feedback-box strong {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.report-section .feedback-box p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.report-section .purple-box {
+  background: #f7efff;
+  border-color: #d8b5ff;
+}
+
+.report-section .feature-card > p {
+  margin: 0 0 18px;
+
+  font-size: 12px;
+  line-height: 1.55;
+  color: #60708f;
+}
+
+.report-section .purple-list {
+  margin: 0;
+  padding-left: 18px;
+
+  color: #9228f8;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+
+/* RIGHT COPY */
+
+.report-section .section-copy {
+  width: 100%;
+  margin: 0;
+}
+
+.report-section .section-copy h2 {
+  margin: 0 0 24px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 36px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.report-section .section-copy > p {
+  margin: 0 0 18px;
+
+  font-size: 14px;
+  line-height: 1.55;
+  color: #60708f;
+}
+
+
+/* THREE FEATURE ITEMS */
+
+.report-section .three-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 30px 0;
+}
+
+.report-section .three-features > div {
+  padding: 0 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  border-right: 1px solid #d9dfea;
+}
+
+.report-section .three-features > div:first-child {
+  padding-left: 0;
+}
+
+.report-section .three-features > div:last-child {
+  border-right: 0;
+}
+
+.report-section .three-features strong {
+  font-size: 11px;
+  color: #171a1e;
+}
+
+.report-section .three-features span {
+  font-size: 10px;
+  line-height: 1.35;
+  color: #60708f;
+}
+
+
+/* VERTICAL FEATURE LINKS */
+
+.report-section .vertical-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.report-section .vertical-links button {
+  padding: 8px 10px;
+
+  border: 1px solid transparent;
+  background: transparent;
+
+  font: inherit;
+  font-size: 11px;
+  color: #60708f;
+
+  cursor: pointer;
+}
+
+.report-section .vertical-links .active-tab {
+  border: 1px solid #9228f8;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #9228f8;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .report-section {
+    width: calc(100% - 24px);
+    padding: 48px 26px;
+
+    grid-template-columns: 1fr;
+    gap: 42px;
+
+    border-radius: 28px;
+  }
+
+  .report-section .section-copy h2 {
+    font-size: 30px;
+  }
+
+  .report-section .three-features {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .report-section .three-features > div {
+    padding: 0;
+    border-right: 0;
+  }
+}
+
+/* =========================================
+   REPORT EXPERIENCE - STRICT FIGMA MATCH
+   ========================================= */
+
+.report-section.split-section {
+  width: min(1034px, calc(100% - 48px));
+  max-width: 1034px;
+
+  margin: 72px auto 0;
+  padding: 76px 72px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: 58px;
+  align-items: start;
+
+  background-color: #fafbff;
+  background-image:
+    linear-gradient(rgba(47, 0, 135, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(47, 0, 135, 0.055) 1px, transparent 1px);
+  background-size: 48px 48px;
+
+  border: 0;
+  border-radius: 42px;
+  box-shadow: 7px 8px 0 rgba(210, 216, 228, 0.9);
+
+  box-sizing: border-box;
+}
+
+/* LEFT FEEDBACK CARD */
+
+.report-section .feature-card {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 28px;
+
+  border: 1.5px solid #9228f8;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.report-section .feature-card h3 {
+  margin: 0 0 22px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.report-section .mini-window {
+  margin: 0 0 22px;
+  padding: 14px;
+
+  border: 1px solid #d9dfea;
+  border-radius: 9px;
+}
+
+.report-section .window-header {
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+
+  font-size: 9px;
+}
+
+.report-section .feedback-box {
+  padding: 11px 12px;
+  margin-top: 10px;
+
+  font-size: 11px;
+}
+
+.report-section .feedback-box p {
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.report-section .feature-card > p {
+  margin: 20px 0 16px;
+
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.report-section .purple-list {
+  margin: 0;
+  padding-left: 18px;
+
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* RIGHT COPY */
+
+.report-section .section-copy {
+  padding-top: 8px;
+}
+
+.report-section .section-copy h2 {
+  margin: 0 0 24px;
+
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 34px;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.report-section .section-copy > p {
+  margin: 0 0 20px;
+
+  font-size: 14px;
+  line-height: 1.55;
+  color: #60708f;
+}
+
+/* THREE FEATURES */
+
+.report-section .three-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 30px 0 26px;
+}
+
+.report-section .three-features > div {
+  padding: 0 16px;
+  border-right: 1px solid #dfe3eb;
+}
+
+.report-section .three-features > div:first-child {
+  padding-left: 0;
+}
+
+.report-section .three-features > div:last-child {
+  border-right: 0;
+}
+
+.report-section .three-features strong {
+  margin-bottom: 5px;
+
+  font-size: 12px;
+}
+
+.report-section .three-features span {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+/* VERTICAL LINKS */
+
+.report-section .vertical-links {
+  gap: 8px;
+}
+
+.report-section .vertical-links button {
+  padding: 8px 10px;
+
+  font-size: 11px;
+  text-align: left;
+}
+
+.report-section .vertical-links .active-tab {
+  border: 1px solid #9228f8;
+  border-radius: 6px;
+  background: transparent;
+  color: #9228f8;
+}
+
+/* MOBILE */
+
+@media (max-width: 850px) {
+  .report-section.split-section {
+    width: calc(100% - 24px);
+    padding: 48px 26px;
+
+    grid-template-columns: 1fr;
+    gap: 38px;
+
+    border-radius: 28px;
+  }
+}
+
+/* REPORT OUTER SIZE FIX */
+
+.report-section.split-section {
+  width: min(1034px, calc(100% - 48px)) !important;
+  max-width: 1034px !important;
+
+  /* match the visual scale of Monaco / Student */
+  min-height: 520px;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  padding: 72px 64px !important;
+}
